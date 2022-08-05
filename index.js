@@ -12,22 +12,32 @@
 Jawaban - Alvian Febriansyach
 */
 
-// Jawaban nomor 1
-for (let i = 1; i <= 100; i++) {
-    if (i % 2 === 0) {
-        console.log (i + " adalah angka genap!");
+// Function
+function numberChecker (start, end, problem) {
+    if (problem === "odd/even") {
+        for (let i = start; start <= end; start++) {
+            if (start % 2 === 0) {
+                    console.log (start + " adalah angka genap!");
+                }
+                else {
+                    console.log (start + " adalah angka ganjil!");
+                }
+        }
     }
-    else {
-        console.log (i + " adalah angka ganjil!");
+    else if (problem === "faktorPerkalian3") {
+        for (let i = start; start <= end; start += 5) {
+            if (start % 3 === 0) {
+                    console.log (start + " merupakan faktor perkalian 3");
+                }
+                else {
+                    console.log (start + " bukan faktor perkalian 3")
+                }
+        }
     }
 }
 
+// Jawaban nomor 1
+console.log(numberChecker(1, 100, "odd/even"))
+
 // Jawaban nomor 2 
-for (let i = 50; i <= 200; i += 5) {
-    if (i % 3 === 0) {
-        console.log (i + " merupakan faktor perkalian 3");
-    }
-    else {
-        console.log (i + " bukan faktor perkalian 3")
-    }
-}
+console.log(numberChecker(50, 200, "faktorPerkalian3"))
