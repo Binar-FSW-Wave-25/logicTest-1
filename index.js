@@ -8,7 +8,9 @@
 * Buatlah sebuah loop untuk mengecek setiap 5 angka dari 50-200, lalu cetak angka tersebut dan tuliskan apakah bilangan tersebut merupakan faktor perkalian 3 atau bukan.
 */
 
-// Jawaban - Alvian Febriansyach
+/*
+Jawaban - Alvian Febriansyach
+*/
 
 // Jawaban nomor 1
 for (let i = 1; i <= 100; i++) {
@@ -21,7 +23,7 @@ for (let i = 1; i <= 100; i++) {
 }
 
 // Jawaban nomor 2 
-for (let i = 50; i <= 200; i++) {
+for (let i = 50; i <= 200; i += 5) {
     if (i % 3 === 0) {
         console.log (i + " merupakan faktor perkalian 3");
     }
